@@ -23,5 +23,58 @@
         android:text="Realizar receta"
         tools:layout_editor_absoluteX="154dp"
         tools:layout_editor_absoluteY="543dp" />
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/descripcion_icono"
+        android:src="@drawable/ic_comida" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/descripcion_receta"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foto_salmorejo" />
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+        <color name="color_primario">#6B4F3A</color>
+        <color name="color_secundario">#8FAF7B</color>
+        <color name="color_fondo">#F8F3E8</color>
+        <color name="color_texto_principal">#2E251F</color>
+        <color name="color_acento">#D98E4A</color>
+        <color name="color_blanco">#FFFFFF</color>
+
+    </resources>
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+        <style name="EstiloTitulo">
+            <item name="android:textColor">@color/color_primario</item>
+            <item name="android:textSize">@dimen/tamano_titulo</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="EstiloBoton">
+            <item name="android:textColor">@color/color_blanco</item>
+            <item name="android:textSize">@dimen/tamano_texto</item>
+            <item name="android:minHeight">@dimen/alto_boton</item>
+            <item name="android:backgroundTint">@color/color_primario</item>
+        </style>
+
+    </resources>
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+        <dimen name="margen_principal">20dp</dimen>
+        <dimen name="margen_pequeno">8dp</dimen>
+        <dimen name="tamano_titulo">26sp</dimen>
+        <dimen name="tamano_texto">16sp</dimen>
+        <dimen name="alto_boton">52dp</dimen>
+
+    </resources>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
